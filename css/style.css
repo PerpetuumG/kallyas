@@ -87,6 +87,7 @@ header h3{
 .feature {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: -80px;
   margin-bottom: 180px;
   margin-left: auto;
@@ -94,7 +95,6 @@ header h3{
 .feature__element {
   background: #1f2b2f;
   flex-basis: 32%;
-  flex-wrap: wrap;
   color: #fff;
   padding: 70px 60px;
   box-sizing: border-box;
@@ -195,4 +195,50 @@ header h3{
 }
 .footer__menu ul li a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .feature__element {
+    flex-basis: 49%;
+    padding: 50px 40px;
+    margin-bottom: 20px;
+  }
+  .service__element {
+    flex-basis: 49%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__top{
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+  .header__logo {
+    margin-bottom: 30px;
+  }
+  header h1 {
+    font-size: 36px;
+  }
+  .header h3 {
+    font-size: 22px;
+  }
+  .block__title {
+    font-size: 36px;
+  }
+  .footer__cont{
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  .footer__logo {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .feature__element {
+    flex-basis: 100%;
+  }
+  .service__element {
+    flex-basis: 100%;
+  }
 }
