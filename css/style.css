@@ -23,9 +23,10 @@ body{
 }
 
 .wrap {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+
 }
 .header__top{
   display: flex;
@@ -160,4 +161,38 @@ header h3{
   font-weight: 300;
   line-height: 28px;
   color: #838383;
+}
+
+.footer{
+  background-color: #1f2b2f;
+  width: 100%;
+}
+.footer__cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 20px;
+}
+
+.footer__logo{
+  font-family: "Source Code Pro";
+  font-size: 36px;
+}
+
+.footer__menu ul {
+  list-style: none;
+  display: flex;
+}
+.footer__menu ul li {
+  margin: 0 20px;
+}
+.footer__menu ul li:last-child {
+  margin-right: 0;
+}
+.footer__menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__menu ul li a:hover {
+  text-decoration: underline;
 }
